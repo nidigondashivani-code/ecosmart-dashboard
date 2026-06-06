@@ -8,10 +8,10 @@ const Reports = () => {
   useEffect(() => {
     const fetchReportData = async () => {
       try {
-        const scoreRes = await fetch('http://localhost:5000/api/score');
+        const scoreRes = await fetch('https://ecosmart-dashboard.onrender.com/api/score');
         const scoreData = await scoreRes.json();
         
-        const recRes = await fetch('http://localhost:5000/api/recommendations');
+        const recRes = await fetch('https://ecosmart-dashboard.onrender.com/api/recommendations');
         const recData = await recRes.json();
         
         setData({ ...scoreData, recommendations: recData.recommendations });

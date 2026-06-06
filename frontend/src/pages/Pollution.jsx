@@ -9,7 +9,7 @@ const Pollution = () => {
   useEffect(() => {
     const fetchPollutionData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/pollution');
+        const response = await fetch('https://ecosmart-dashboard.onrender.com/api/pollution');
         const result = await response.json();
         setData(result[0] || result);
       } catch (error) {

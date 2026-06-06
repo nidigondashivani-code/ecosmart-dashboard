@@ -9,7 +9,7 @@ const Water = () => {
   useEffect(() => {
     const fetchWaterData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/water');
+        const response = await fetch('https://ecosmart-dashboard.onrender.com/api/water');
         const result = await response.json();
         setData(result[0] || result);
       } catch (error) {

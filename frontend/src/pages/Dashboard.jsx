@@ -22,11 +22,11 @@ const Dashboard = () => {
     // For now, we simulate fetching the dashboard summary.
     const fetchDashboardData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/score');
+        const response = await fetch('https://ecosmart-dashboard.onrender.com/api/score');
         const result = await response.json();
         
         // Also fetch recommendations
-        const recRes = await fetch('http://localhost:5000/api/recommendations');
+        const recRes = await fetch('https://ecosmart-dashboard.onrender.com/api/recommendations');
         const recData = await recRes.json();
         
         setData({ ...result, recommendations: recData.recommendations });

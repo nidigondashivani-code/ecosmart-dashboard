@@ -20,7 +20,7 @@ const Waste = () => {
   useEffect(() => {
     const fetchWasteData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/waste');
+        const response = await fetch('https://ecosmart-dashboard.onrender.com/api/waste');
         const result = await response.json();
         setData(result);
       } catch (error) {
