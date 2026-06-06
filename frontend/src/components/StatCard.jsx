@@ -1,4 +1,3 @@
-import React from 'react';
 
 const StatCard = ({ title, value, icon, subtitle, colorClass = "text-primary", bgClass = "bg-primary/20" }) => {
   return (

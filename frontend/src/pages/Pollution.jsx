@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import StatCard from '../components/StatCard';
-import { Wind, Thermometer, Droplet, AlertTriangle, Factory, Car, Pickaxe, ShieldAlert, CheckCircle } from 'lucide-react';
+import { Wind, AlertTriangle, Factory, Car, Pickaxe, ShieldAlert, CheckCircle } from 'lucide-react';
 
 const Pollution = () => {
   const [data, setData] = useState(null);

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LayoutDashboard, Trash2, Wind, Droplets, FileBarChart, Leaf } from 'lucide-react';
 
